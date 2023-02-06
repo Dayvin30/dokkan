@@ -10,21 +10,22 @@ $(document).ready(function() {
 
     });
 
-    $('.filter-category').keyup(function (e) {
-        console.log("key pressed");
-        let toFind = $(this).val().toLowerCase();
-
-        $('.category').each(function () {
-            if ($(this).text().toLowerCase().includes(toFind)) {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
 
 
-        });
+});
+
+$('.filter-category').keyup(function (e) {
+    console.log("key pressed");
+    let toFind = $(this).val().toLowerCase();
+
+    $('.category').each(function () {
+        if ($(this).text().toLowerCase().includes(toFind)) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+
 
     });
 
 });
-
