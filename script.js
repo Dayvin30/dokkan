@@ -8,3 +8,13 @@ $(document).ready(function(){
 
     });
 });
+
+
+$('.filter-category').onkeydown(function(e){
+    let toFind = $(this).val();
+    if($('.category').text().includes(toFind)){
+        $('.category').show();
+    }else{
+        $('.category').hide();
+    }
+}
