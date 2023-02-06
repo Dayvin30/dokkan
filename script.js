@@ -7,6 +7,10 @@ $(document).ready(function() {
         var dummy = $('<input>').val(dummyContent).appendTo('body').select()
         document.execCommand('copy')
         toastr.success('Copied to clipboard!')
+        $("html, body").animate({
+            scrollTop: 0
+        }, 9000);
+    });
 
     });
 
