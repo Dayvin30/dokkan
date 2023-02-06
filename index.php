@@ -22,7 +22,7 @@
 
     <div name="<?php echo $value ?>" class="category"><?php echo $key ?></div>
     <input class="invisible-input" style="display: none">
-        <br>
+
 
 <?php
 }
