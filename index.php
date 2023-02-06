@@ -17,9 +17,9 @@
     <img class="logo" src="assets/DokkanLogo.jpg">
 <h1> Dokkan Category Translator </h1>
 
-
-<div class="category-container">
     <input class="filter-category" placeholder="Find a category...">
+<div class="category-container">
+
     <?php
     $category = getCategory();
     foreach($category as $key => $value) {?>
