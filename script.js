@@ -15,7 +15,7 @@ $(document).ready(function() {
         let toFind = $(this).val();
 
         $('.category').each(function () {
-            if ($(this).text().includes(toFind)) {
+            if ($(this).text().contains(toFind)) {
                 $(this).show();
             } else {
                 $(this).hide();
