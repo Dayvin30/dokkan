@@ -11,6 +11,7 @@ $(document).ready(function(){
 
 
 $('.filter-category').onkeydown(function(e){
+    console.log("key pressed");
     let toFind = $(this).val();
     if($('.category').text().includes(toFind)){
         $('.category').show();
