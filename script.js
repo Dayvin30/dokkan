@@ -9,10 +9,10 @@ $(document).ready(function() {
         toastr.success('Copied to clipboard!')
         $("html, body").animate({
             scrollTop: 0
-        }, 9000);
+        });
     });
 
- 
+
 
 
 
