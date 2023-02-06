@@ -21,7 +21,6 @@ h1 {
     cursor: pointer;
     padding: 18px;
     min-width: 300px;
-    max-width: 300px;
     border: none;
     text-align: left;
     outline: none;
@@ -29,8 +28,6 @@ h1 {
     transition: 0.4s;
     display: inline-block;
     border: solid 1px #ccc;
-    min-height: 124px;
-    max-height: 124px;
 }
 
 .category-container {
