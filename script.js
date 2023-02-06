@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-    
+
     $(".category").click(function(){
         var dummyContent = $(this).attr('name');
         console.log(dummyContent);
@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     });
 
-    $('.filter-category').onkeydown(function(e){
+    $('.filter-category').keyup(function(e){
         console.log("key pressed");
         let toFind = $(this).val();
         if($('.category').text().includes(toFind)){
