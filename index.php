@@ -14,8 +14,9 @@
 
 <body>
 <div class="container">
+    <img class="logo" src="assets/DokkanLogo.jpg">
 <h1> Dokkan Category Translator </h1>
-<img class="logo" src="assets/DokkanLogo.jpg">
+
 
 <div class="category-container">
     <?php
