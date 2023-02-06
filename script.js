@@ -18,4 +18,4 @@ $('.filter-category').onkeydown(function(e){
     }else{
         $('.category').hide();
     }
-}
+});
