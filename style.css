@@ -28,6 +28,7 @@ h1 {
     transition: 0.4s;
     display: inline-block;
     border: solid 1px #ccc;
+    text-align: center;
 }
 
 .category-container {
