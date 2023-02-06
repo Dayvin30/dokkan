@@ -14,6 +14,7 @@ $(document).ready(function() {
 
 });
 
+$(document).ready(function() {
 $('.filter-category').keyup(function (e) {
     console.log("key pressed");
     let toFind = $(this).val().toLowerCase();
@@ -28,4 +29,5 @@ $('.filter-category').keyup(function (e) {
 
     });
 
+});
 });
