@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(".category").click(function () {
         var dummyContent = $(this).attr('name');
         console.log(dummyContent);
-        var dummy = $('<input disabled>').val(dummyContent).appendTo('body').select()
+        var dummy = $('<input>').val(dummyContent).appendTo('body').select()
         document.execCommand('copy')
         toastr.success('Copied to clipboard!')
 
