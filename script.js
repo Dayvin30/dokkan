@@ -6,7 +6,7 @@ $(document).ready(function() {
         console.log(dummyContent);
         var dummy = $('<input>').val(dummyContent).appendTo('body').select()
         document.execCommand('copy')
-        toastr.success("Category copied", 'Suceess');
+        toastr.success("Category copied", 'Success!');
         document.activeElement.blur();
         $("input").blur();
     });
