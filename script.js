@@ -1,8 +1,7 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 
-
-    $(".category").click(function(){
+    $(".category").click(function () {
         var dummyContent = $(this).attr('name');
         console.log(dummyContent);
         var dummy = $('<input style="display: none">').val(dummyContent).appendTo('body').select()
@@ -11,16 +10,21 @@ $(document).ready(function(){
 
     });
 
-    $('.filter-category').keyup(function(e){
+    $('.filter-category').keyup(function (e) {
         console.log("key pressed");
         let toFind = $(this).val();
-        if($('.category').text().includes(toFind)){
-            $('.category').show();
-        }else{
-            $('.category').hide();
-        }
+
+        $('.category').each(function () {
+            if ($(this).text().includes(toFind)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+
+
+        });
+
     });
 
 });
-
 
