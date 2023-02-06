@@ -6,7 +6,7 @@ $(document).ready(function() {
         console.log(dummyContent);
         var dummy = $('<input>').val(dummyContent).appendTo('body').select()
         document.execCommand('copy')
-        toastr.success('Copied to clipboard!')
+        toastr.success("message", 'test');
         document.activeElement.blur();
         $("input").blur();
     });
