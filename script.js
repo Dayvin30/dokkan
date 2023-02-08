@@ -9,6 +9,7 @@ $(document).ready(function() {
         toastr.success("Category copied", 'Success!');
         document.activeElement.blur();
         $("input").blur();
+        $('.to-copy').remove();
     });
 
 
