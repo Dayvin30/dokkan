@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-    $("div").click(function() {
+    $(".category").click(function() {
         var name = $(this).attr("name");
         var tempInput = $("<input>");
         $("body").append(tempInput);
@@ -10,7 +10,7 @@ $(document).ready(function() {
         tempInput.remove();
         console.log("Value copied to clipboard: " + name);
     });
-    
+
 
 });
 
