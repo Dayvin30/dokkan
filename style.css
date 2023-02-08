@@ -41,7 +41,15 @@ h1 {
 }
 .input{
     display: flex;
+    align-self: center;
+    max-width: 1690px;
+    min-width: 338px;
 }
+
+@media screen and (max-width: 600px) {
+    .input {
+        max-width: 338px;
+    }
 .logo {
     float: left;
     padding: 12px;
