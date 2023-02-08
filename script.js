@@ -37,7 +37,7 @@ $('.filter-category').keyup(function (e) {
 });
 
 $(document).ready(function() {
-    var contentWidth = $('.category-container').outerWidth(true);
+    var contentWidth = $('.category-container').outerWidth(false);
     $('.filter-category').width(contentWidth);
 });
 
