@@ -39,6 +39,6 @@ $('.filter-category').keyup(function (e) {
 $(document).ready(function() {
     var contentWidth = $('.category-container').outerWidth(false);
     console.log(contentWidth);
-    $('.filter-category').width(contentWidth);
+    $('.filter-category').css.width = contentWidth;
 });
 
