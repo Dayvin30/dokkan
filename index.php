@@ -19,6 +19,7 @@
 
 <div class="category-container">
     <div class="input"><input class="filter-category" placeholder="Find a category..."></div>
+    <br> <br>
     <?php
     $category = getCategory();
     foreach($category as $key => $value) {?>
