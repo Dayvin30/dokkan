@@ -35,3 +35,8 @@ $('.filter-category').keyup(function (e) {
 
 });
 });
+
+$(document).ready(function() {
+    var divWidth = $('.category-container').width();
+    $('.filter-category').width(divWidth);
+});

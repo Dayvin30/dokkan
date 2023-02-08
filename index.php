@@ -15,7 +15,7 @@
 <div class="container">
     <img class="logo" src="assets/DokkanLogo.jpg">
 <h1> Dokkan Category Translator </h1>
-    <div class="input"><input class="filter-category" placeholder="Find a category...">
+    <div class="input"><input class="filter-category" placeholder="Find a category..."></div>
     <br> <br>
 
 <div class="category-container">
@@ -34,7 +34,7 @@
 ?>
 </div>
 
-    </div>
+
 
 </div>
 </body>
