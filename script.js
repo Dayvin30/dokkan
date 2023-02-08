@@ -10,9 +10,7 @@ $(document).ready(function() {
         tempInput.remove();
         console.log("Value copied to clipboard: " + name);
     });
-
-
-
+    
 
 });
 
