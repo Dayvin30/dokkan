@@ -1,16 +1,15 @@
 $(document).ready(function() {
 
 
-    $(".category").click(function () {
-        var dummyContent = $(this).attr('name');
-        console.log(dummyContent);
-        var dummy = $('<input>').val(dummyContent).appendTo('body').select()
-        document.execCommand('copy')
-        toastr.success("Category copied", 'Success!');
-        document.activeElement.blur();
-        $("input").blur();
+    $("div").click(function() {
+        var name = $(this).attr("name");
+        var tempInput = $("<input>");
+        $("body").append(tempInput);
+        tempInput.val(name).select();
+        document.execCommand("copy");
+        tempInput.remove();
+        console.log("Value copied to clipboard: " + name);
     });
-
 
 
 
