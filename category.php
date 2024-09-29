@@ -1,4 +1,3 @@
-
 <?php
 function getCategory()
 {
@@ -22,7 +21,7 @@ function getCategory()
             'Dragon Ball Heroes' => 'DBヒーローズ',
             'Dragon Ball Seekers' => 'ドラゴンボールを求めし者',
             'Earthlings' => '地球人',
-            'Earth-Bred-Fighters' => '地球育ちの戦士',
+            'Earth-Bred Fighters' => '地球育ちの戦士',
             'Entrusted Will' => '託された意志',
             'Exploding Rage' => '怒り爆発',
             'Final Trump Card' => '最後の切り札',
@@ -39,7 +38,7 @@ function getCategory()
             'GT Heroes' => 'GT HERO',
             'Heavenly Events' => '天界の出来事',
             'Hybrid Saiyans' => '混血サイヤ人',
-            'Inhuman Deeds' => '悪逆非道 ',
+            'Inhuman Deeds' => '悪逆非道',
             'Joined Forces' => 'コンビネーション',
             'Kamehameha' => 'かめはめ波',
             'Legendary Existence' => '伝説の存在',
@@ -63,7 +62,7 @@ function getCategory()
             'Pure Saiyans' => '純粋サイヤ人',
             'Rapid Growth' => '急激な成長',
             'Realm of Gods' => '神次元',
-            'Representative of Universe 7' => '第7宇宙代表 / Dai nana u-chū dai-hyō',
+            'Representative of Universe 7' => '第7宇宙代表',
             'Resurrected Warriors' => '復活戦士',
             'Revenge' => 'リベンジ',
             'Saiyan Saga' => 'サイヤ人編',
@@ -74,6 +73,7 @@ function getCategory()
             'Special Pose' => 'スペシャルポーズ',
             'Storied Figures' => '語り継がれし者',
             'Super Heroes' => '超HERO',
+            'Super Saiyan' => '超サイヤ人',
             'Super Saiyan 2' => '超サイヤ人２',
             'Super Saiyan 3' => '超サイヤ人３',
             'Super Saiyans' => '超サイヤ人',
@@ -83,6 +83,7 @@ function getCategory()
             'Terrifying Conquerors' => '恐怖の征服',
             'Time Limit' => '時間制限',
             'Time Travelers' => '時空を超えし者',
+            'Tournament Participants' => '大会出場者',
             'Transformation Boost' => '変身強化',
             'Turtle School' => '亀仙流',
             'Universe 6' => '第6宇宙',
@@ -93,11 +94,11 @@ function getCategory()
             'World Tournament' => '天下一武道会',
             'Worldwide Chaos' => '世界の混乱',
             'Worthy Rivals' => '好敵手',
-            'Youth' => '少年・少女'
+            'Youth' => '少年・少女',
+            'Super Bosses' => '超BOSS',
+            'Uncontrollable Power' => '制御不能の力',
         ];
 
-return($category);
+    return $category;
 }
-
-
 ?>
