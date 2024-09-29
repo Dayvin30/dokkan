@@ -7,7 +7,7 @@
     <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <link href="style.css" rel="stylesheet">
-   <?php include 'category.php'; ?>
+   <?php include 'category/category.php'; ?>
 
 </head>
 
