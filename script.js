@@ -18,22 +18,39 @@ $(document).ready(function() {
 
 });
 
-$(document).ready(function() {
-    $('.filter-category').keyup(function (e) {
-        console.log("key pressed");
+$(document).ready(function () {
+    $('.filter-category').on('keyup', function () {
         let toFind = $(this).val().toLowerCase();
+        let currentSectionVisible = false;
 
-        $('.category').each(function () {
-            if ($(this).text().toLowerCase().includes(toFind)) {
-                $(this).show();
+        // Commence par tout cacher
+        $('.category').hide();
+
+        // Parcourt chaque section
+        $('.section-title').each(function () {
+            let section = $(this);
+            let hasVisible = false;
+
+            // Trouve les catégories qui suivent ce titre jusqu'au prochain titre
+            let categories = section.nextUntil('.section-title', '.category');
+
+            categories.each(function () {
+                let categoryText = $(this).text().toLowerCase();
+                if (categoryText.includes(toFind)) {
+                    $(this).show();
+                    hasVisible = true;
+                }
+            });
+
+            // Affiche le titre si au moins une catégorie dans cette section correspond
+            if (hasVisible) {
+                section.show();
             } else {
-                $(this).hide();
+                section.hide();
             }
-
-
         });
-
     });
 });
+
 
 
