@@ -167,6 +167,7 @@
         <input class="filter-category" placeholder="Find a category...">
     </div>
 
+
     <br> <br>
 
 <div class="category-container">
@@ -205,12 +206,17 @@
         $color = isset($match[1]) ? $match[1] : 'Orange';
         $cssColor = $colors[$color];
         echo "<div class='section-title'>$section</div>";
+
+        $delay = 0;
         foreach ($keys as $key) {
             if (isset($category[$key])) {
-                echo "<div class='category {$cssColor}' title='{$category[$key]}' name='{$category[$key]}'>$key</div>";
+                $inlineStyle = "style='animation-delay: " . number_format($delay, 2) . "s;'";
+                echo "<div class='category {$cssColor}' title='{$category[$key]}' name='{$category[$key]}' $inlineStyle>$key</div>";
+                $delay += 0.05;
             }
         }
     }
+
     ?>
 
 </div>

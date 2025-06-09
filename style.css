@@ -81,6 +81,9 @@ h1 {
     transition: background-color 0.3s;
     flex: 0 0 100%;
     max-width: 95%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 
@@ -132,6 +135,51 @@ h1 {
 
 .category:hover {
     background-color: #ddd;
+}
+
+.autocomplete-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid #ff4500;
+    position: relative;
+    z-index: 2;
+}
+
+#autocomplete-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
