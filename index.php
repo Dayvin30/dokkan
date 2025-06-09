@@ -8,6 +8,7 @@
     <script type="text/javascript" src="/script.js"></script>
     <script src="https://cdn.counter.dev/script.js" data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e" data-utcoffset="2"></script>
     <link href="/style.css" rel="stylesheet">
+<body>
     <?php
     function getCategory()
     {
@@ -132,7 +133,7 @@
 
 
 
-<body>
+
 <div class="container">
     <img class="logo" src="/DokkanLogo.png" alt="logo">
 
