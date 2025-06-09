@@ -6,6 +6,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
     <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="/script.js"></script>
+    <script src="https://cdn.counter.dev/script.js" data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e" data-utcoffset="2"></script>
     <link href="/style.css" rel="stylesheet">
     <?php
     function getCategory()
