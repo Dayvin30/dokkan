@@ -182,7 +182,7 @@
         echo "<div class='section-title'>$section</div>";
         foreach ($keys as $key) {
             if (isset($category[$key])) {
-                echo "<div class='category {$colors[ucfirst($color)]}' name='{$category[$key]}'>$key</div>";
+                echo "<div class='category {$colors[ucfirst($color)]}' title='{$category[$key]}' name='{$category[$key]}'>$key</div>";
             }
         }
     }
