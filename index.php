@@ -143,7 +143,10 @@
         🔗 See on Reddit
     </a>
 
-    <div class="input"><input class="filter-category" placeholder="Find a category..."></div>
+    <div class="search-bar">
+        <input class="filter-category" placeholder="Find a category...">
+    </div>
+
     <br> <br>
 
 <div class="category-container">

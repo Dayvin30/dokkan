@@ -28,6 +28,40 @@ body{
     background-color: #e03d00;
 }
 
+.search-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+
+}
+
+
+.filter-category {
+    background: linear-gradient(145deg, #ffd700, #ff9900);
+    border: 2px solid #ff4500;
+    box-shadow: 0 0 10px #ff8c00, 0 0 20px #ffa500 inset;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filter-category:focus {
+    outline: none;
+    box-shadow: 0 0 15px #ffcc00, 0 0 30px #ff9900 inset;
+    transform: scale(1.05);
+}
+
+
 h1 {
     color: white;
     text-align: center;
@@ -46,8 +80,10 @@ h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     transition: background-color 0.3s;
-    flex: 1 1 220px;
-    margin: 6px;
+
+    /* On enlève margin */
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 
@@ -55,8 +91,8 @@ h1 {
 .category-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 20px; /* contrôle l'espacement entre les cases */
     padding: 10px;
 }
 
@@ -74,13 +110,18 @@ h1 {
     width: 300px;
     align-self: center;
 }
- .section-title {
-     color: white;
-     font-weight: bold;
-     padding: 10px;
-     margin-top: 30px;
-     font-size: 18px;
- }
+.section-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    clear: both; /* au cas où des floats interfèrent */
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
 
 .orange  { background-color: #f57c00; }
 .green   { background-color: #388e3c; }
@@ -97,15 +138,18 @@ h1 {
 }
 
 
-@media (min-width: 768px) {
+/* Tablette : 2 par ligne */
+@media (min-width: 600px) {
     .category {
-        flex: 1 1 220px;
+        flex: 0 0 calc(50% - 20px); /* - gap */
+        max-width: calc(50% - 20px);
     }
 }
 
-@media (min-width: 1200px) {
+/* Desktop : 4 par ligne parfaitement aligné */
+@media (min-width: 992px) {
     .category {
-        flex: 1 1 250px;
+        flex: 0 0 calc(20% - 20px); /* 4 par ligne, avec gap */
+        max-width: calc(20% - 20px);
     }
 }
-
