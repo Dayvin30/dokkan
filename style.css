@@ -82,8 +82,8 @@ h1 {
     transition: background-color 0.3s;
 
     /* On enlève margin */
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 100%; 
+    max-width: 95%;
 }
 
 
