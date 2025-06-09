@@ -1,25 +1,38 @@
 <head>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-    <!-- jQuery (garde seulement la version moderne) -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- Toastr -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css?v=<?= time() ?>" rel="stylesheet"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js?v=<?= time() ?>"></script>
-
-    <!-- Scripts et styles locaux avec cache-busting -->
-    <link rel="stylesheet" href="/style.css?v=<?= time() ?>">
-    <script src="/script.js?v=<?= time() ?>"></script>
-
-    <!-- Compteur de visites -->
-    <script src="https://cdn.counter.dev/script.js"
-            data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e"
-            data-utcoffset="2"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="Explore categorized units from Dragon Ball Z Dokkan Battle with enhanced search and color-coded categories.">
+    <meta name="author" content="Dokkan Fan Project">
+    <meta name="theme-color" content="#000000">
 
     <title>Dokkan Category</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Modern jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" defer></script>
+
+    <!-- Toastr (plus récent + defer) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-L4X5LzJ5Ql4MyF93s3UJ9/kPoOMs3sxyvDZ4bKvDG+vRZXU3uJc9fJzGDp8QiqkcvyaMReSQWktCkNcF2NO9dQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-XQ2KxwCzGpU7Ey+mFYb2y6Hb8IXLUz2nbp6f7Zl7ayO5uLP2W7+5iU2XPI1TzK7xOi5vPknsbs3ugGn0GBa3zA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Local styles and scripts with cache-busting -->
+    <link rel="stylesheet" href="/style.css?v=<?= time() ?>">
+    <script src="/script.js?v=<?= time() ?>" defer></script>
+
+    <!-- Visit Counter -->
+    <script src="https://cdn.counter.dev/script.js" data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e" data-utcoffset="2" defer></script>
+
+    <!-- Accessibility & Performance Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
+
 
 
 <?php
