@@ -149,9 +149,6 @@
 <body>
 <div class="container">
     <img class="logo" src="/DokkanLogo.png" alt="logo">
-    <a class="source-link" href="https://www.reddit.com/r/DBZDokkanBattle/comments/r10piq/jp_formatted_category_list_for_easy_reading_wiki/" target="_blank">
-        🔗 See on Reddit
-    </a>
 
     <div class="search-bar">
         <input class="filter-category" placeholder="Find a category...">
@@ -208,6 +205,10 @@
 
 
 </div>
+
+<a class="source-link" href="https://www.reddit.com/r/DBZDokkanBattle/comments/r10piq/jp_formatted_category_list_for_easy_reading_wiki/" target="_blank">
+    🔗 See on Reddit
+</a>
 </body>
 
 
