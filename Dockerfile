@@ -2,7 +2,7 @@
 FROM php:8.2-apache
 
 # Copie ton code dans le dossier web d’Apache
-COPY . /var/www/html/
+COPY Docker /var/www/html/
 
 # Donne les droits appropriés (optionnel)
 RUN chown -R www-data:www-data /var/www/html
