@@ -1,14 +1,28 @@
 <head>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet"/>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
-    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/script.js"></script>
-    <script src="https://cdn.counter.dev/script.js" data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e" data-utcoffset="2"></script>
-    <link href="/style.css" rel="stylesheet">
-    <?php
+
+    <!-- jQuery (garde seulement la version moderne) -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Toastr -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css?v=<?= time() ?>" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js?v=<?= time() ?>"></script>
+
+    <!-- Scripts et styles locaux avec cache-busting -->
+    <link rel="stylesheet" href="/style.css?v=<?= time() ?>">
+    <script src="/script.js?v=<?= time() ?>"></script>
+
+    <!-- Compteur de visites -->
+    <script src="https://cdn.counter.dev/script.js"
+            data-id="f358037a-2c3a-4d3b-8c38-85172e683f9e"
+            data-utcoffset="2"></script>
+
+    <title>Dokkan Category</title>
+</head>
+
+
+<?php
     function getCategory()
     {
         return [
@@ -131,9 +145,6 @@
     ?>
 
 
-?>
-
-</head>
 
 <body>
 <div class="container">
