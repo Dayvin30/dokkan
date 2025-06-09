@@ -178,11 +178,12 @@
     // Affichage section par section
     foreach ($sections as $section => $keys) {
         preg_match('/\((.*?)\)/', $section, $match);
-        $color = isset($match[1]) ? strtolower(str_replace(' ', '', $match[1])) : 'orange';
+        $color = isset($match[1]) ? $match[1] : 'Orange';
+        $cssColor = $colors[$color];
         echo "<div class='section-title'>$section</div>";
         foreach ($keys as $key) {
             if (isset($category[$key])) {
-                echo "<div class='category {$colors[ucfirst($color)]}' title='{$category[$key]}' name='{$category[$key]}'>$key</div>";
+                echo "<div class='category {$cssColor}' title='{$category[$key]}' name='{$category[$key]}'>$key</div>";
             }
         }
     }
