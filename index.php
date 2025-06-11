@@ -202,6 +202,28 @@
 <a class="source-link" href="https://www.reddit.com/r/DBZDokkanBattle/comments/r10piq/jp_formatted_category_list_for_easy_reading_wiki/" target="_blank">
     🔗 See on Reddit
 </a>
+    <!-- Modal bloquant -->
+    <!-- Blocking Modal -->
+    <div id="newSiteModal" style="position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center;">
+        <div style="background:white; width:90%; max-width:450px; padding:30px; border-radius:10px; text-align:center; box-shadow:0 0 20px rgba(0,0,0,0.5); font-family:Arial, sans-serif;">
+            <h2>🚀 New Website with New Features</h2>
+            <p>We’ve launched a new version of this site with improved features and performance.</p>
+            <p><strong>🔗 Visit it now:</strong><br>
+                <a href="https://dokkan-battle-translator.net" target="_blank" style="color:blue; word-break:break-all;">
+                    https://dokkan-battle-translator.net
+                </a>
+            </p>
+            <p style="color:black; font-weight:bold; margin-top:20px;">
+                ⚠️ This site will be shut down at the end of the month.
+            </p>
+            <button onclick="window.location.href='https://dokkan-battle-translator.net'" style="padding:12px 24px; font-size:16px; margin-top:20px; cursor:pointer;">
+                Go to the new website
+            </button>
+        </div>
+    </div>
+
+
+
 </body>
 
 
